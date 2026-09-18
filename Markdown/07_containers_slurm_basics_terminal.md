@@ -1,4 +1,4 @@
-> **Terminal reference.** Companion to notebook 07. This exercise continues with the wheel produced in Module 4 under `/home/pariansm/CAS/.terminal_ref_scripts`. Singularity is the main container example; Docker is shown only as a side comparison.
+> **Terminal reference.** Companion to notebook 07. This exercise continues with the wheel produced in Module 4 under `demo_env_project/.terminal_ref_scripts`. Singularity is the main container example; Docker is shown only as a side comparison.
 
 # Module 7 — Containers and Slurm Basics: Package the Real Wheel
 
@@ -15,7 +15,7 @@ By the end you can:
 Work from the project that produced the wheel:
 
 ```bash
-PROJECT_DIR="/home/pariansm/CAS/.terminal_ref_scripts"
+PROJECT_DIR="$PWD/demo_env_project/.terminal_ref_scripts"
 cd "$PROJECT_DIR"
 mkdir -p containers logs artifacts/singularity artifacts/docker artifacts/slurm
 ```
@@ -114,7 +114,7 @@ On the current course host, a plain build reports that `--remote`, `--fakeroot`,
 
 ### Recommended classroom path: distribute a prebuilt SIF
 
-Before class, build from `/home/pariansm/CAS/.terminal_ref_scripts` on an approved build host where fakeroot is configured:
+Before class, build from `demo_env_project/.terminal_ref_scripts` on an approved build host where fakeroot is configured:
 
 ```bash
 singularity build --fakeroot myproject-0.1.0.sif containers/myproject.def
@@ -128,10 +128,10 @@ sudo singularity build myproject-0.1.0.sif containers/myproject.def
 sha256sum myproject-0.1.0.sif
 ```
 
-Copy `myproject-0.1.0.sif` into `/home/pariansm/CAS/.terminal_ref_scripts` before the exercise. Students then begin with a non-destructive check:
+Copy `myproject-0.1.0.sif` into `demo_env_project/.terminal_ref_scripts` before the exercise. Students then begin with a non-destructive check:
 
 ```bash
-PROJECT_DIR="/home/pariansm/CAS/.terminal_ref_scripts"
+PROJECT_DIR="$PWD/demo_env_project/.terminal_ref_scripts"
 cd "$PROJECT_DIR"
 test -f myproject-0.1.0.sif || {
   echo "Missing prebuilt myproject-0.1.0.sif — ask the instructor for the course image."
