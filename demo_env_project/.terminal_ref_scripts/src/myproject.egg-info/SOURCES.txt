@@ -2,6 +2,7 @@ README.md
 pyproject.toml
 src/myproject/__init__.py
 src/myproject/cli.py
+src/myproject/config.py
 src/myproject/pipeline.py
 src/myproject.egg-info/PKG-INFO
 src/myproject.egg-info/SOURCES.txt
