@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: myproject
+Version: 0.1.0
+Summary: Notebook-to-package classroom example
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML>=6
+Requires-Dist: scikit-learn>=1.3
+
+mkdir -p .terminal_ref_scripts
+cd .terminal_ref_scripts
+mkdir -p src/myproject tests configs artifacts
+cat > README.md <<'MD'
+# myproject
+dir
+ls

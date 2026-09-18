@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/myproject/__init__.py
+src/myproject/cli.py
+src/myproject/pipeline.py
+src/myproject.egg-info/PKG-INFO
+src/myproject.egg-info/SOURCES.txt
+src/myproject.egg-info/dependency_links.txt
+src/myproject.egg-info/entry_points.txt
+src/myproject.egg-info/requires.txt
+src/myproject.egg-info/top_level.txt
